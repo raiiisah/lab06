@@ -2,7 +2,7 @@
 
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
-
+# encode done by raisa
 def encode_password(password):
     encoded_password = ''
     for digit in password:
@@ -18,7 +18,7 @@ def decode_password(encoded_password):
         decoded_password += new_digit
     return decoded_password
 
-
+# decode done by john
 def decoder(user_password):
     numbers = []
     decoded_value = 0
@@ -38,7 +38,7 @@ def decoder(user_password):
 
     return numbers
 
-
+# menu
 while True:
     print("Menu")
     print("-------------")
