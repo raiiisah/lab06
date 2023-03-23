@@ -10,6 +10,17 @@ def encode_password(password):
         encoded_password += new_digit
     return encoded_password
 
+# decode done by raisa
+def decode(text):
+    s = 3
+    result = ""
+    # traverse text
+    for i in range(len(text)):
+        char = text[i]
+        # Encrypt uppercase characters
+        result += chr((ord(char) - s - 48 + 10) % 10 + 48)
+
+    return result
 
 def decode_password(encoded_password):
     decoded_password = ''
